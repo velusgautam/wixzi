@@ -1,0 +1,160 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="de"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<!-- scaling not possible (for smartphones, ipad, etc.) -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+	<title>WIXZI Weaving Innovations</title>
+	<link href="css/fonts.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css" title="style"/>
+	<link href="css/isotope.css" rel="stylesheet" type="text/css"/>
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css"/>
+	<link href="css/fancybox.css" rel="stylesheet" type="text/css"/>
+	<!---->
+	<link href="css/mqueries.css" rel="stylesheet" type="text/css" media="screen"/>
+	<link href="demo/demo.css" rel="stylesheet"/>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.modernizr.min.js"></script>
+
+</head>
+<body id="portfolio">
+<div id="page">
+	<header id="header">
+		<div class="header_inner wrapper">
+
+			<div class="header_top clearfix">
+				<div id="logo" class="left_float">
+					<a class="logotype" href="index.php"><img src="images/logo.png" alt="Logotype"></a></div>
+
+				<nav id="nav" class="right_float">
+					<ul>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="about.php">About</a></li>
+						<li><a href="services.php">Services</a></li>
+						<li><a href="portfolio.php" class="active">Portfolio</a></li>
+						<li><a href="pricingtable.php">Pricing</a></li>
+						<li><a href="contact.php">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<section id="pagetitle">
+		<div class="pagetitle_inner wrapperoverlay">
+			<h2><strong>Portfolio</strong><span class="tagline">What we've done so far</span></h2>
+		</div>
+	</section>
+
+	<section id="main">
+		<div class="main_inner wrapper clearfix">
+
+			<article id="maincontent" class="left_float">
+				<div id="slider" class="slidercontent">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<div class="imgoverlay"><a href="images/portfolio/work_02.jpg" class="openfancybox" rel="gallery"><img src="images/portfolio/work_02.jpg"/></a></div>
+							</li>
+							<li>
+								<div class="imgoverlay"><a href="images/portfolio/work_01.jpg" class="openfancybox" rel="gallery"><img src="images/portfolio/work_01.jpg"/></a></div>
+							</li>
+							<li>
+								<div class="imgoverlay"><a href="images/portfolio/work_03.jpg" class="openfancybox" rel="gallery"><img src="images/portfolio/work_03.jpg"/></a></div>
+							</li>
+							<li>
+								<div class="imgoverlay"><a href="images/portfolio/work_04.jpg" class="openfancybox" rel="gallery"><img src="images/portfolio/work_04.jpg"/></a></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+
+			<aside id="sidebar" class="right_float">
+				<section class="sidebar_section">
+					<h3><strong>Fermentum massa justo</strong></h3>
+
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tristique odio, quis fringilla ligula aliquet ut. Maecenas sed justo varius velit imperdiet bibendum. Vivamus nec sapien massa, a imperdiet
+						diam.</p>
+
+					<p>
+						Aliquam erat volutpat. Sed consectetur suscipit nunc et rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo. </p>
+
+					<p>
+						<a href="" class="themebutton">See Website</a></p>
+				</section>
+
+				<section class="sidebar_section">
+					<div id="pagination">
+						<a href="portfolio-single.php" id="nav-prev" class="loadcontent">Previous</a>
+						<a href="portfolio-single.php" id="nav-next" class="loadcontent">Next</a></div>
+					<!-- END #pagination -->
+				</section>
+			</aside>
+		</div>
+		<!-- END #main_inner -->
+	</section>
+	<!-- END #main -->
+
+	<section id="bottom">
+		<div class="bottom_inner wrapperoverlay">
+			<div class="widget"><h6>Social Media</h6>
+
+				<div class="socialmedia">
+					<a class="facebook" href="https://www.facebook.com/weavingwixzi" target="_blank"><span style="margin-top: 0px;">Facebook</span></a>
+					<a class="twitter" href="https://twitter.com/WixziSolutions" target="_blank"><span>Twitter</span></a>
+
+					<a class="googleplus" href="https://plus.google.com/+WixziSolutions/posts" target="_blank"><span>Google+</span></a></div>
+			</div>
+		</div>
+	</section>
+	<!-- END #bottom -->
+	<footer id="footer">
+		<div class="footer_inner wrapper clearfix">
+			<div class="column full">
+				<div class="widget">
+					<h6 class="sectiontitle">Latest Tweets</h6>
+
+					<div id="twitter-widget">
+						<?php include_once('tweets.php') ?>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END .footer_inner -->
+		<div class="footer_bottom clearfix ">
+			<div class="left_float">Copyright Wixzi © <?php
+                $copyYear = 2008; // Set your website start date
+                $curYear = date('Y'); // Keeps the second year updated
+                echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : '');
+                ?>. All rights reserved.</div>
+
+		</div>
+	</footer>
+
+	<a href="" class="totop" title="Back to top">ToTop</a></div>
+<!-- END #page -->
+
+<!-- jquery -->
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src='js/jquery.easing.1.3.js'></script>
+<script src='js/jquery.easing.compatibility.js'></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+
